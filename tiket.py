@@ -6,6 +6,7 @@ def process_matrix_and_vector():
         row = []
         for j in range(n):
             value = int(matrix_entries[i][j].get())
+            
             row.append(value)
         matrix.append(row)
 
@@ -37,6 +38,7 @@ root = tk.Tk()
 root.title("Matrix and Vector Processor")
 
 canvas = tk.Canvas(root, width=400, height=400)
+
 canvas.grid(row=0, column=0, columnspan=n)
 
 matrix_entries = [[tk.Entry(root, width=5) for _ in range(n)] for _ in range(n)]
